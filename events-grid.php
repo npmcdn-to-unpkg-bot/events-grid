@@ -27,7 +27,7 @@ define( "SWEG_PLUGINDIR",  plugin_dir_path(__FILE__) ) ;
 function sweg_load_assets() {
     global $post;
     if  (has_shortcode( $post->post_content, 'events-grid') ) {
-	//	wp_enqueue_script('Isotope', '//npmcdn.com/isotope-layout@3.0.1/dist/isotope.pkgd.js', array(), null  , false );
+	//	wp_enqueue_script('Isotope', '//unpkg.com/isotope-layout@3.0.1/dist/isotope.pkgd.js', array(), null  , false );
         wp_enqueue_script('jquery-Isotope', '//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js' , array('jquery'), null  , false );
         wp_enqueue_style('events-grid-styles',  SWEG_PLUGINDIRURI . "/css/events-grid.css"  ) ;
     }
